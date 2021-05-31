@@ -1,0 +1,12 @@
+<expression_1>?<expression_2>:<expression_3>
+
+Expression_1 - logical expression (expression returning either false or true)
+
+A != 0 - will be true only if value of A is not equal to 0
+A == 0 - will be true only if value of A is equal to 0
+
+A conditional expression will return expression_2 in the case if expression_1 is true otherwise will be return expression_3
+
+A = 3 < 5 ? 10 : 20 // returned 10
+A = 3 > 5 ? 10 : 20 // returned 20
+
