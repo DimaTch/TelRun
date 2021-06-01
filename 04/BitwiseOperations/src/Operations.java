@@ -129,12 +129,13 @@ public class Operations {
 
 	public static int log2(long number) {
 		// TODO Auto-generated method stub
+		if(number<0) number=-number;
 		int cnt=0;
-		while(number!=0) {
+		while(number!=1) {
 			number>>=1;
 			cnt++;
 		}
-		return cnt-1;
+		return cnt;
 	}
 
 }

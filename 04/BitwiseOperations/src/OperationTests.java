@@ -79,8 +79,8 @@ class OperationTests {
 		assertEquals(8, Operations.log2(256));
 		assertEquals(8, Operations.log2(400));
 		assertEquals(10, Operations.log2(1024));
-		//assertEquals(11, Operations.log2(-1024));
-		assertEquals(35, Operations.log2(8589934592L));
+		assertEquals(10, Operations.log2(-1024));
+		assertEquals(33, Operations.log2(8589934592L));
 		
 	}
 
