@@ -9,12 +9,12 @@ public class Algo {
 	public static boolean isSum (short arr[], short sum){
 		sortSelect(arr);
 		
-		int left=0, right=arr.length-1;
-		
+		int left=0, right=arr.length-1;		
 		while(left!=right) {
-			if(arr[left]+arr[right]>sum)		right--;
-			if(arr[left]+arr[right]<sum)		left++;
-			if(arr[left]+arr[right]==sum) 	return true;
+			int lr = arr[left] + arr[right];
+			if(lr>sum)		right--; 
+			if(lr<sum)		left++;
+			if(lr==sum) 	return true;
 		}
 	return false;
 	}
